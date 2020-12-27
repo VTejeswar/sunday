@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ocademy</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/img/on-passive/fav-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+  <style>
+    .notif-thumb {
+
+      font-size: 11px;
+      
+    }
+
+    .bounce1 {
+      -moz-animation: bounce1 2s infinite;
+      -webkit-animation: bounce1 2s infinite;
+      animation: bounce1 2s infinite;
+    }
+
+    @keyframes bounce1 {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-6px);
+      }
+
+      60% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .dropdown-header.noti-title h6 {
+      color: #2255a4;
+      padding-left: 8px;
+    }
+
+    .media-body.ml-2:hover span .fa {
+      color: #116353 !important;
+    }
+
+    .media-body.ml-2:hover span {
+      color: #2f6157 !important;
+    }
+
+    .media-body.ml-2 .text-white>i {
+      transition: 0.6s;
+    }
+
+    .media-body.ml-2 .text-white {
+      transition: 0.6s;
+    }
+
+    a.dropdown-item:hover img {
+      -webkit-filter: brightness(0)invert(100);
+      -moz-filter: brightness(0)invert(100);
+      -o-filter: brightness(0)invert(100);
+      -ms-filter: brightness(0)invert(100);
+      filter: brightness(0)invert(100);
+    }
+
+    .dropdown-menu .dropdown-item:hover,
+    .dropdown-menu .dropdown-item:focus,
+    .dropdown-menu a:hover,
+    .dropdown-menu a:focus,
+    .dropdown-menu a:active {
+      color: #FFFFFF;
+      background-color: #27a9e3;
+      border-color: #27a9e3;
+      box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
+    }
+
+    .media-body i.fa.fa-angle-down {
+      color: #fff;
+    }
+
+
+    /* Google translator css start */
+    .goog-text-highlight {
+      background: transparent;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+
+    .goog-tooltip {
+      display: none !important;
+    }
+
+    .goog-te-menu-frame {
+      width: 1060px !important;
+      /*bottom: 60px !important;
+      height: 293px !important;
+      position: absolute !important;*/
+      left: auto !important;
+      right: 15px;
+
+      /* display: block !important; */
+    }
+
+
+    #ul_community_head_id {
+      margin-right: 10px;
+      display: block;
+    }
+
+    .goog-te-gadget-simple {
+      background-color: inherit !important;
+      border-radius: 4px;
+      border: none;
+      font-size: 10pt;
+      display: inline-block;
+      padding-top: 1px;
+      padding-bottom: 2px;
+      cursor: pointer;
+      zoom: 1;
+      border: 1px solid rgba(255, 255, 255, 0.66) !important;
+      color: #fff;
+      height: 30px;
+      line-height: 27px;
+    }
+
+    .gt {
+      padding-top: 56px;
+    }
+
+    .gt__box {
+      background: #565656;
+      position: fixed;
+      padding: 15px;
+      color: #b8aea5;
+      width: 100%;
+      top: 0;
+      left: 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .gt__notif,
+    .gt__select {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .gt__notif {
+      max-width: calc(100% - 166px);
+      margin: 0;
+      padding-right: 10px;
+      line-height: 18px;
+    }
+
+    .goog-te-banner-frame {
+      display: none;
+    }
+
+    .goog-te-gadget-simple img {
+      display: none;
+    }
+
+
+    body {
+      top: 0 !important;
+    }
+
+    .goog-te-gadget-simple img {
+      display: none;
+    }
+
+    .goog-te-menu-value {
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+
+    .goog-te-menu-value span:nth-child(5) {
+      display: none;
+    }
+
+    .goog-te-menu-value span:nth-child(3):after {
+      font-family: 'Material Icons';
+      content: "\E5C5";
+      font-size: 1.5rem;
+      vertical-align: -6px;
+    }
+
+    .goog-te-gadget-simple .goog-te-menu-value span {
+      border-color: #fff !important;
+      margin-left: 5px;
+      border: none !important;
+    }
+
+    .goog-te-menu2 {
+      padding: 20px;
+      border: none !important;
+      border-radius: 4px;
+      background: #000 !important;
+    }
+
+
+
+
+    .goog-te-menu2-item div,
+    .goog-te-menu2-item:link div {
+      background: rgba(93, 136, 255, 0);
+      color: #fff;
+    }
+
+    .goog-te-menu2-item div:hover, .goog-te-menu2-item:link div:hover{
+      color:#00aee0;
+    }
+
+    .gt__select select {
+      outline: 0;
+    }
+
+
+    /* Live batch css  start*/
+
+    .sidebar-link .blink {
+      position: absolute;
+      top: 11px;
+    }
+
+    .layers-body.layer5::before {
+      content: '';
+      position: absolute;
+      top: -28px;
+      right: -14px;
+      width: 40px;
+      height: 100px;
+      background: #fff;
+      transform: rotate(-42deg);
+      z-index: -1;
+      box-shadow: -6px 1px 10px rgba(0, 0, 0, 0.27);
+      left: auto;
+    }
+
+    .layers-body.layer5 {
+      position: relative;
+    }
+
+    span.live-data {
+      top: 12px;
+      right: -4px;
+      transform: rotate(52deg);
+      font-size: 15px;
+      font-weight: 900;
+      width: 40px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    span.live-data::before {
+      display: none;
+    }
+
+    /* Live batch css  end*/
+
+
+    @media (max-width:1300px) {
+      .goog-te-menu-frame {
+        width: 850px !important;
+      }
+    }
+
+
+
+    @media (max-width:992px) {
+      .goog-te-menu-frame {
+        width: 504px !important;
+      }
+
+      .navbar .navbar-nav.p-menu .nav-item .nav-link {
+        padding-right: 0;
+      }
+
+      .translate-menu {
+        margin-right: 40px;
+      }
+
+
+    }
+
+
+
+    @media screen and (max-width: 767px) {
+      .gt__notif {
+        max-width: 100%;
+        margin: 0 0 10px 0;
+      }
+
+
+
+
+    }
+
+
+    @media screen and (max-width: 576px) {
+      ul.navbar-nav.align-items-center.d-flex.p-menu {
+        margin-right: 37px;
+      }
+
+      .translate-menu {
+        margin-right: 0px;
+        display: flex;
+        flex: 0 0 100%;
+      }
+
+      .navbar-toggler {
+        top: 32px;
+      }
+
+      .goog-te-menu-frame {
+        width: 90% !important;
+        /*bottom: 100px !important;
+        left: 50% !important;*/
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+      }
+
+      .goog-te-menu-frame {
+        height: 300px !important;
+      }
+
+
+    }
+
+
+
+    @media screen and (max-width: 480px) {
+      .community-list-item .dropdown-menu {
+        min-width: 18.5rem;
+        left: -130px !important;
+      }
+
+
+    }
+
+
+    /* Google translator css end */
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+  <app-root></app-root>
+  </div>
+
+  <script>
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+Project Name : Ocademy
+
+### Homepage :::
+
+# Color Codes :
+    Dark Blue : #1C56AE
+    Light Blue : #2D93CF
+
+
+# In Sliders Color Codes :
+    #E94285     #E58E5C
+    #7449CC     #E063E4
+    #00AFE0     #00FCDC
+
+# Text Color Codes :
+   #FFFFFF
+   #000000
+   #989898
+
+
+Font Family :::
+
+Poppins - Regular
+        - Light
+        - Medium
+        - Bold
+        - Semi Bold  
+
