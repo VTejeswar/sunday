@@ -11,7 +11,7 @@ export class Comp2Component implements OnInit {
 
   constructor(private service:BehaviorService) { }
   subscribename:string="SABRISH";
-  arr=[];
+  arr=[];  
 
   ngOnInit(): void {
     this.service.name.subscribe((res)=>{
