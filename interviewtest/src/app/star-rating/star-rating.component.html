@@ -1,0 +1,13 @@
+<div style="text-align:center">
+    <h1>
+      ng-starrating demo
+    </h1>
+    <star-rating value="3.5" totalstars="{{totalstar}}"
+    checkedcolor="red" uncheckedcolor="green" size="24px" 
+     readonly="false" (rate)="onRate($event)"></star-rating>
+  
+  
+     
+     <star-rating value="3.5" totalstars={{SN}} checkedcolor="#1C56AE"
+     uncheckedcolor="#989898" size="24px" readonly="true" (rate)="onRate($event)"></star-rating>
+  </div>
