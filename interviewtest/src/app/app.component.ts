@@ -6,7 +6,7 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    array:any=[]
+    array:any=[];
     constructor(){
 
     }
@@ -21,6 +21,21 @@ export class AppComponent {
         {id:0,city:"Khamamr",dist:"Hyderabad",state:"Hyderabad"},
         {id:0,city:"Padampur",dist:"Rayagada",state:"Odisha"}
       ];
+      this.removeDup()
     };
     
+    arr=[1,4,6,2,4,];
+    removeDup(){
+      // eg:1
+      // var x=[...new Set(this.arr)];
+      // console.log(x)
+      // eg:1
+
+      // eg 2
+        var y=this.arr.filter((a,b)=>{return this.arr.indexOf(a)==b});
+        console.log(this.arr,'actual result')
+        console.log(y,'final result')
+      // eg 2
+
+    }
 };

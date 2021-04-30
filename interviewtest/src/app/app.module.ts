@@ -6,10 +6,6 @@ import { AppComponent } from './app.component';
 import { DndModule } from 'ngx-drag-drop';
 
 import { NgxFileDropModule } from 'ngx-file-drop';
-import { MainComponent } from './Behavior components/main/main.component';
-import { Comp1Component } from './Behavior components/comp1/comp1.component';
-import { Comp2Component } from './Behavior components/comp2/comp2.component';
-import { Comp3Component } from './Behavior components/comp3/comp3.component';
 import { RestAPIComponent } from './rest-api/rest-api.component';
 import { RestAPIService } from './rest-api.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -18,19 +14,17 @@ import { StarRatingComponentt } from './star-rating/star-rating.component';
 import { RatingModule } from 'ng-starrating';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DebouncingComponent } from './debouncing/debouncing.component';
-import { MaterialTabPageComponent } from './material-tab-page/material-tab-page.component';
 import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSelectModule } from '@angular/material/select';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    Comp1Component,
-    Comp2Component,
-    Comp3Component,
     RestAPIComponent,
     StarRatingComponentt,
-    DebouncingComponent,   
-    MaterialTabPageComponent
+    DebouncingComponent
     // RestAPIService
   ],
   imports: [
@@ -42,11 +36,13 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSelectModule
   ],
   providers: [
     // {provide: HTTP_INTERCEPTORS,useClass:RestAPIInterceptor,multi:true}
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [DebouncingComponent]
 })
 export class AppModule { }

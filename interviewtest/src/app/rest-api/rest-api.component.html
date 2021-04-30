@@ -1,4 +1,24 @@
+<div class="container">
+
 <button (click)="hh()">ghffg</button> <br>
 <p>rest-api works!</p>
+<select class="form-control" [(ngModel)]="selecteddata"
+ (change)="selectSort(selecteddata)" >
+    <!-- <option value="" *ngFor="let x of f">{{x.name}}</option> -->
+    <option value="A-Z">A-Z</option>
+    <option value="Z-A">Z-A</option>
+</select>
+<table class="table ">
+    <tr >
+    <th>NAME</th>
+    <th>CAPITAL</th>
+    </tr>
+    <tr *ngFor="let x of f">
+        <td>{{x.name}}</td>
+        <td>{{x.capital}}</td>
+    </tr>
+</table>
 
-{{f | async | json}}
+
+<!-- {{f | json}} -->
+</div>
